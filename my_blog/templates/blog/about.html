@@ -1,0 +1,26 @@
+
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block body %}
+
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <div class="row">
+            <video poster="/media/blog/about/20190817_033526.jpg" width="100%" controls>
+              <source src="/media/blog/about/20190817_033526.mp4" type="video/mp4" p>
+              <source src="movie.ogg" type="video/ogg">
+              <source src="movie.webm" type="video/webm">
+              <object data="movie.mp4" width="100%">
+                <embed src="movie.swf" width="100%">
+              </object>
+            </video>
+
+            </div>
+              <h2 style="text-align: center;white-space:nowrap;overflow:hidden;text-overflow: ellipsis">我的简历</h2>
+
+          </div>
+
+
+     {% endblock %}

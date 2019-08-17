@@ -1,0 +1,66 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block body %}
+
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h2 style="text-align: center">努力与奋斗，绽放生命的色彩</h2>
+              <p>致各位访客：</p>
+            <p style="text-indent: 2em">把所有的夜归还给星河，把所有的春光归还给疏疏篱落。把所有的慵慵沉迷与不前，归还给过去的我。 明日之我，胸中有丘壑，立马振山河！</p>
+              <p style="text-align: right;font-size: 1em">——卡德先生</p>
+          </div>
+            <div class="row">
+                {% for article in articles%}
+                    <div class="col-xs-6 col-md-4">
+                <div class="thumbnail">
+                    <a href="{% url 'blog:article' article.id %}">
+                  <img src="{{ MEDIA_URL }}{{ article.picture }}" alt="..." style="width: 100%">
+                    </a>
+                  <div class="caption">
+                   <h5 style="white-space:nowrap;overflow:hidden;text-overflow: ellipsis;text-align: center"><a href="{% url 'blog:article' article.id %}">{{ article.title }}</a></h5>
+                  </div>
+                </div>
+            </div><!--/.col-xs-6.col-lg-4-->
+                {% endfor %}
+
+                </div>
+
+
+          <!--/row-->
+            <div class="row text-center">
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                {% if articles.has_previous %}
+
+                  <li><a href="?page={{ articles.previous_page_number }}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+
+                {% else %}
+                  <li class="disabled"><span aria-hidden="false">&laquo;</span></li>
+
+                {% endif %}
+
+                {% for num in articles.paginator.page_range %}
+
+                    {% if num == articles.number %}
+
+                        <li class="active"><span>{{ num }}</span></li>
+                    {% else %}
+                        <li><a href="?page={{ num }}">{{ num }}</a></li>
+
+                    {% endif %}
+                {% endfor %}
+
+
+                {% if articles.has_next %}
+                  <li><a href="?page={{ articles.next_page_number }}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+
+                {% else %}
+                  <li class="disabled"><span aria-hidden="false">&raquo;</span></li>
+
+                {% endif %}
+              </ul>
+            </nav>
+                </div>
+        {% endblock %}
