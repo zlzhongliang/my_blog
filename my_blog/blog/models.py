@@ -38,7 +38,7 @@ class ArticleModel(models.Model):
     title = models.CharField(max_length=200, verbose_name='文章标题')
     author = models.CharField(max_length=10, verbose_name="作者")
     picture = models.ImageField(upload_to=user_avatar_path, default='blog/article/icon/20190817_031833.jpg', verbose_name='缩略图')
-    video = models.FileField(upload_to=user_avatar_path, default='blog/article/icon/20190817_033526.mp4', verbose_name='视频')
+    video = models.CharField(max_length=500,verbose_name='视频地址')
     content = RichTextUploadingField()
     nav1 = models.ForeignKey(NavModel,related_name='nav1',default=1,on_delete=models.CASCADE,verbose_name='一级类别')
     nav2 = models.ForeignKey(NavModel,related_name='nav2',default=1, on_delete=models.CASCADE, verbose_name='二级类别')
@@ -54,6 +54,6 @@ class ArticleModel(models.Model):
         return self.title
 
     @classmethod
-    def createArticle(cls,author, title, content,nav1,nav2,is_show,picture):
-        article = cls(author=author,title=title,content=content,nav1=nav1,nav2=nav2,is_show=is_show,picture=picture)
+    def createArticle(cls,author, title, video,content,nav1,nav2,is_show,picture):
+        article = cls(author=author,title=title, video=video, content=content,nav1=nav1,nav2=nav2,is_show=is_show,picture=picture)
         return article

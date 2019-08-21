@@ -4,23 +4,17 @@
 {% block body %}
 
           <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">More <span class="glyphicon glyphicon-list" aria-hidden="true"></span></button>
           </p>
           <div class="jumbotron">
-            <div class="row">
-            <video poster="{{ MEDIA_URL }}{{ article.picture }}" width="100%" controls>
-              <source src="{{ MEDIA_URL }}{{ article.video }}" type="video/mp4" p>
-              <source src="movie.ogg" type="video/ogg">
-              <source src="movie.webm" type="video/webm">
-              <object data="movie.mp4" width="100%">
-                <embed src="movie.swf" width="100%">
-              </object>
-            </video>
 
-            </div>
-              <h2 style="text-align: center;white-space:nowrap;overflow:hidden;text-overflow: ellipsis">{{ article.title }}</h2>
+        <a class="btn btn-info" href=""
+           onclick="window.open('{{ article.video }}','_blank','scrollbars=0,resizable=0;width=500');return false" role="button" style="width: 100%">
+            <span></span>
+            <span class="glyphicon glyphicon-facetime-video" aria-hidden="true" style="font-size: 45px"></span></a>
+            <h2 style="text-align: center;white-space:nowrap;overflow:hidden;text-overflow: ellipsis">{{ article.title }}</h2>
               {{ article.content|safe }}
-          </div>
 
+          </div>
 
      {% endblock %}
