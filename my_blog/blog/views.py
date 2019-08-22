@@ -24,6 +24,7 @@ def index(request):
     data = {'articles': page_of_blogs,
             'right_articles': right_articles,
             'navs': navs,
+            'title': "钟亮的个人博客",
             }
     return render(request, "blog/index.html", data)
 
@@ -50,6 +51,7 @@ def article_list(request, nav_id):
     data = {'articles': page_of_blogs,
             'right_articles': right_articles,
             'navs': navs,
+            'title': "钟亮的个人博客",
             }
     return render(request,"blog/article_list.html", data)
 
@@ -62,6 +64,7 @@ def article(request,article_id):
         data = {'article': article,
                 'right_articles': right_articles,
                 'navs': navs,
+                'title': article.title,
                 }
         return render(request, "blog/article.html", data)
     except Exception as e:
@@ -73,5 +76,6 @@ def about(request):
     right_articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', 'browse_count')[:5]
     data = {'right_articles': right_articles,
             'navs': navs,
+            'title': "关于博主",
             }
     return render(request,"blog/about.html", data)

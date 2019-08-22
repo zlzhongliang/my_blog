@@ -46,7 +46,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -83,8 +83,7 @@ DATABASES = {
         'NAME': 'my_blog',
         'USER': 'root',
         'PASSWORD': 'Px8023.*',
-        'HOST': '192.168.229.144',
-        # 'HOST': 'localhost',
+        'HOST': '47.94.134.131',
         'PORT': '3306',
     }
 }
