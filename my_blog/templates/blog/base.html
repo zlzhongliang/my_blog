@@ -16,20 +16,21 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="{% static 'blog/css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
+    <!--<link href="{% static 'blog/css/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">-->
 
     <!-- Custom styles for this template -->
     <link href="{% static 'blog/css/offcanvas.css' %}" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../static/blog/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../static/blog/js/ie-emulation-modes-warning.js"></script>
+    <!--[if lt IE 9]>-->
+    <!-- <script src="../../static/blog/js/ie8-responsive-file-warning.js"></script> -->
+    <!--<script src="../../static/blog/js/ie-emulation-modes-warning.js"></script>-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!--[if lt IE 9]>-->
+      <!--<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>-->
+      <!--<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <!--[endif]-->
   </head>
 
   <body>
@@ -47,7 +48,6 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="{% url 'blog:about' %}">关于博主</a></li>
-
             {% for nav in navs %}
               {% if nav.Nav_root == null %}
                     <li class="dropdown ">
@@ -58,33 +58,20 @@
                             <li><a href="{% url 'blog:article_list' nav2.id %}">{{ nav2.nav_name }}</a></li>
                           {% endif %}
                         {% endfor %}
-
                       </ul>
                     </li>
-
               {% endif %}
             {% endfor %}
-
-
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
     <div class="container">
-
       <div class="row row-offcanvas row-offcanvas-right">
-
         <div class="col-xs-12 col-sm-9">
-
-
-
               {% block body %}
-
         {% endblock %}
-
-
-
         </div><!--/.col-xs-12.col-sm-9-->
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
@@ -112,10 +99,11 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../static/blog/js/jquery.min.js"><\/script>')</script>
+    <!--<script>window.jQuery || document.write('<script src="../../static/blog/js/jquery.min.js"><\/script>')</script>-->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../static/blog/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="../../static/blog/js/offcanvas.js"></script>
+    <!--<script src="../../static/blog/js/ie10-viewport-bug-workaround.js"></script>-->
+    <!--<script src="../../static/blog/js/offcanvas.js"></script>-->
+    <script src="{% static 'blog/js/offcanvas.js' %}"></script>
   </body>
 </html>
