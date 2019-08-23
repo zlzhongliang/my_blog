@@ -60,7 +60,7 @@ def article(request,article_id):
     try:
         article = ArticleModel.objects.get(is_show=True, is_Delete=True, id=article_id)
         navs = NavModel.objects.filter(is_Show=True, is_Delete=True)
-        right_articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', 'browse_count')
+        right_articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', 'browse_count')[:5]
         data = {'article': article,
                 'right_articles': right_articles,
                 'navs': navs,
