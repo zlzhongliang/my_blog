@@ -91,7 +91,7 @@
           {% for right_article in right_articles %}
           <div class="list-group">
                 <a href="{% url 'blog:article' right_article.id %}" class="thumbnail" style="width: 100%">
-                  <img src="{{ MEDIA_URL }}{{ right_article.picture }}" alt="..." style="width: 100%">
+                  <img src="{{ MEDIA_URL }}{{ right_article.article_picture.picture }}" alt="..." style="width: 100%">
                 </a>
           </div>
           {% endfor %}

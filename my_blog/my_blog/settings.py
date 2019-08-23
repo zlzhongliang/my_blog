@@ -83,7 +83,8 @@ DATABASES = {
         'NAME': 'my_blog',
         'USER': 'root',
         'PASSWORD': 'Px8023.*',
-        'HOST': '47.94.134.131',
+        # 'HOST': '47.94.134.131',
+        'HOST': '192.168.229.144',
         'PORT': '3306',
     }
 }
