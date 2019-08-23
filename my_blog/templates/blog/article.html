@@ -15,7 +15,12 @@
             <span class="glyphicon glyphicon-facetime-video" aria-hidden="true" style="font-size: 45px"></span></a>
               {% endif %}
 
-            <h2 style="text-align: center;white-space:nowrap;overflow:hidden;text-overflow: ellipsis">{{ article.title }}</h2>
+            <h3 style="text-align: center;white-space:nowrap;overflow:hidden;text-overflow: ellipsis">{{ article.title }}</h3>
+            <h6 style="text-align: center;white-space:nowrap;overflow:hidden;text-overflow: ellipsis">
+                <span class="glyphicon glyphicon-user" aria-hidden="true" style="color: darkgray"></span> {{ article.author }}&nbsp;
+                <span class="glyphicon glyphicon-time" aria-hidden="true" style="color: darkgray"></span> {{ article.issuedate }}&nbsp;
+                <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="color: darkgray"></span> {{ article.browse_count }}&nbsp;
+            </h6>
               {{ article.content|safe }}
 
           </div>

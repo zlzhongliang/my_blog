@@ -7475,3 +7475,11 @@ spawned uWSGI worker 4 (pid: 2818, cores: 1)
 [pid: 2818|app: 0|req: 2/2] 192.168.229.1 () {42 vars in 797 bytes} [Fri Aug 23 06:01:20 2019] GET / => generated 6331 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
 [pid: 2818|app: 0|req: 3/3] 192.168.229.1 () {42 vars in 797 bytes} [Fri Aug 23 06:42:47 2019] GET / => generated 6432 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
 [pid: 2818|app: 0|req: 4/4] 192.168.229.1 () {44 vars in 836 bytes} [Fri Aug 23 06:42:50 2019] GET / => generated 6432 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 5/5] 192.168.229.1 () {42 vars in 735 bytes} [Fri Aug 23 14:58:42 2019] GET / => generated 6432 bytes in 127 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2818|app: 0|req: 6/6] 192.168.229.1 () {38 vars in 716 bytes} [Fri Aug 23 14:58:42 2019] GET /favicon.ico => generated 3038 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 7/7] 192.168.229.1 () {42 vars in 739 bytes} [Fri Aug 23 14:58:52 2019] GET / => generated 6432 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 8/8] 192.168.229.1 () {42 vars in 767 bytes} [Fri Aug 23 14:58:54 2019] GET /article_list/5 => generated 6359 bytes in 48 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 9/9] 192.168.229.1 () {42 vars in 797 bytes} [Fri Aug 23 15:09:37 2019] GET / => generated 6432 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2814|app: 0|req: 1/10] 192.168.229.1 () {42 vars in 744 bytes} [Fri Aug 23 15:09:37 2019] GET /favicon.ico => generated 3038 bytes in 134 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
