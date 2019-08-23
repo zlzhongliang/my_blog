@@ -6,7 +6,7 @@
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">More <span class="glyphicon glyphicon-list" aria-hidden="true"></span></button>
           </p>
-          <div class="jumbotron">
+          <div class="jumbotron" style="line-height:250%">
         {% if article.video == '0' %}
               {% else %}
         <a class="btn btn-info" href=""
@@ -15,8 +15,9 @@
             <span class="glyphicon glyphicon-facetime-video" aria-hidden="true" style="font-size: 45px"></span></a>
               {% endif %}
 
-            <h3 style="text-align: center;white-space:nowrap;overflow:hidden;text-overflow: ellipsis">{{ article.title }}</h3>
-            <h6 style="text-align: center;white-space:nowrap;overflow:hidden;text-overflow: ellipsis">
+            <h3 style="text-align: center;">{{ article.title }}</h3>
+              <p></p>
+            <h6 style="text-align: center;">
                 <span class="glyphicon glyphicon-user" aria-hidden="true" style="color: darkgray"></span> {{ article.author }}&nbsp;
                 <span class="glyphicon glyphicon-time" aria-hidden="true" style="color: darkgray"></span> {{ article.issuedate }}&nbsp;
                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="color: darkgray"></span> {{ article.browse_count }}&nbsp;
@@ -24,5 +25,6 @@
               {{ article.content|safe }}
 
           </div>
+
 
      {% endblock %}

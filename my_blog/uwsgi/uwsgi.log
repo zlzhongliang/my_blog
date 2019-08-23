@@ -7483,3 +7483,7 @@ Not Found: /favicon.ico
 [pid: 2818|app: 0|req: 9/9] 192.168.229.1 () {42 vars in 797 bytes} [Fri Aug 23 15:09:37 2019] GET / => generated 6432 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
 Not Found: /favicon.ico
 [pid: 2814|app: 0|req: 1/10] 192.168.229.1 () {42 vars in 744 bytes} [Fri Aug 23 15:09:37 2019] GET /favicon.ico => generated 3038 bytes in 134 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 10/11] 192.168.229.1 () {42 vars in 797 bytes} [Fri Aug 23 15:49:23 2019] GET / => generated 6432 bytes in 45 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 11/12] 192.168.229.1 () {42 vars in 797 bytes} [Fri Aug 23 16:29:36 2019] GET / => generated 6432 bytes in 58 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2818|app: 0|req: 12/13] 192.168.229.1 () {42 vars in 744 bytes} [Fri Aug 23 16:29:36 2019] GET /favicon.ico => generated 3038 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
