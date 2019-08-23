@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00c0ed67-9f35-4d5f-b86a-ba5768149e0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/my_blog/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_blog/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_blog/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/media/blog/article/icon/20190822_094136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/media/blog/img/article/content_images/2019/08/17/app_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/media/blog/img/article/content_images/2019/08/17/ckin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/media/blog/img/article/content_images/2019/08/17/ckin.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/media/blog/img/article/content_images/2019/08/17/ckin_77gSu0j.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/media/blog/img/article/content_images/2019/08/17/ckin_FWGP7Xv.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_blog/my_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_blog/my_blog/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/templates/blog/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_blog/templates/blog/article_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/templates/blog/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_blog/templates/blog/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/my_blog/templates/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_blog/uwsgi/uwsgi.log" beforeDir="false" afterPath="$PROJECT_DIR$/my_blog/uwsgi/uwsgi.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/data/binlog.000002" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/data/binlog.000002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/data/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/data/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/data/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql/data/my_blog/blog_articlemodel.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/data/my_blog/blog_articlemodel.ibd" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_blog/my_blog/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="183">
+              <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -98,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_blog/templates/blog/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="465">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -176,12 +160,12 @@
         <option value="$PROJECT_DIR$/my_blog/blog/views.py" />
         <option value="$PROJECT_DIR$/my_blog/templates/blog/about.html" />
         <option value="$PROJECT_DIR$/my_blog/templates/blog/article.html" />
-        <option value="$PROJECT_DIR$/my_blog/my_blog/settings.py" />
         <option value="$PROJECT_DIR$/my_blog/blog/admin.py" />
         <option value="$PROJECT_DIR$/my_blog/blog/models.py" />
         <option value="$PROJECT_DIR$/my_blog/templates/blog/index.html" />
         <option value="$PROJECT_DIR$/my_blog/templates/blog/article_list.html" />
         <option value="$PROJECT_DIR$/my_blog/templates/blog/base.html" />
+        <option value="$PROJECT_DIR$/my_blog/my_blog/settings.py" />
       </list>
     </option>
   </component>
@@ -341,15 +325,16 @@
       <workItem from="1565783877986" duration="12599000" />
       <workItem from="1565837275341" duration="10242000" />
       <workItem from="1565849822603" duration="5966000" />
-      <workItem from="1565857840516" duration="67868000" />
+      <workItem from="1565857840516" duration="68146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96680000" />
+    <option name="totallyTimeSpent" value="96958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1440" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26043165" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -468,13 +453,6 @@
     <entry file="file://$PROJECT_DIR$/my_blog/blog/migrations/0004_auto_20190821_0529.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_blog/my_blog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_blog/blog/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -546,12 +524,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_blog/templates/blog/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="465">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_blog/my_blog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="86" column="32" lean-forward="true" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
         </state>
       </provider>
     </entry>
