@@ -7585,3 +7585,736 @@ Not Found: /favicon.ico
 [pid: 2817|app: 0|req: 21/106] 192.168.229.1 () {46 vars in 920 bytes} [Sat Aug 24 09:53:00 2019] GET / => generated 7255 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
 [pid: 2817|app: 0|req: 22/107] 192.168.229.1 () {46 vars in 920 bytes} [Sat Aug 24 09:53:00 2019] GET / => generated 7255 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
 [pid: 2814|app: 0|req: 24/108] 192.168.229.1 () {44 vars in 898 bytes} [Sat Aug 24 09:53:01 2019] GET /article/4 => generated 10521 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2814|app: 0|req: 25/109] 192.168.229.1 () {46 vars in 929 bytes} [Sat Aug 24 10:29:41 2019] GET /article/4 => generated 6159 bytes in 53 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader_tags.py", line 176, in render
+    template = context.template.engine.get_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./blog/views.py", line 81, in about
+      File "/usr/local/lib/python3.6/dist-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/usr/local/lib/python3.6/dist-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: public.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 2889-2892: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 91, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 95, in response_for_exception
+    exc_info=sys.exc_info(),
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/log.py", line 228, in log_response
+    exc_info=exc_info,
+  File "/usr/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1000, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 918, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 58-61: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 2889-2892: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 91, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 95, in response_for_exception
+    exc_info=sys.exc_info(),
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/log.py", line 228, in log_response
+    exc_info=exc_info,
+  File "/usr/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1000, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 918, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 58-61: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 2889-2892: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 91, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 95, in response_for_exception
+    exc_info=sys.exc_info(),
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/log.py", line 228, in log_response
+    exc_info=exc_info,
+  File "/usr/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1000, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 918, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 58-61: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 2889-2892: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 91, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 95, in response_for_exception
+    exc_info=sys.exc_info(),
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/log.py", line 228, in log_response
+    exc_info=exc_info,
+  File "/usr/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1000, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 918, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 58-61: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 2889-2892: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 91, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 95, in response_for_exception
+    exc_info=sys.exc_info(),
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/log.py", line 228, in log_response
+    exc_info=exc_info,
+  File "/usr/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1000, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 918, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 58-61: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 2889-2892: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 91, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 95, in response_for_exception
+    exc_info=sys.exc_info(),
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/log.py", line 228, in log_response
+    exc_info=exc_info,
+  File "/usr/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1000, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 918, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 58-61: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 2889-2892: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/deprecation.py", line 91, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 95, in response_for_exception
+    exc_info=sys.exc_info(),
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/log.py", line 228, in log_response
+    exc_info=exc_info,
+  File "/usr/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1000, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 918, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 58-61: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 996, in emit
+    stream.write(msg)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 2889-2892: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/wsgi.py", line 142, in __call__
+    response = self.get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 78, in get_response
+    response = self._middleware_chain(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 36, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 95, in response_for_exception
+    exc_info=sys.exc_info(),
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/log.py", line 228, in log_response
+    exc_info=exc_info,
+  File "/usr/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 1000, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 918, in handleError
+    traceback.print_exception(t, v, tb, None, sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 58-61: ordinal not in range(128)
+[pid: 2818|app: 0|req: 56/110] 192.168.229.1 () {44 vars in 899 bytes} [Sat Aug 24 10:29:47 2019] GET /about => generated 0 bytes in 1758 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+[pid: 2816|app: 0|req: 8/111] 192.168.229.1 () {42 vars in 841 bytes} [Sat Aug 24 11:16:42 2019] GET / => generated 7255 bytes in 70 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 57/112] 192.168.229.1 () {44 vars in 898 bytes} [Sat Aug 24 11:16:45 2019] GET /article/4 => generated 0 bytes in 42 msecs (HTTP/1.1 302) 4 headers in 128 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2817|app: 0|req: 23/113] 192.168.229.1 () {44 vars in 890 bytes} [Sat Aug 24 11:16:45 2019] GET /index => generated 3020 bytes in 19 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2818|app: 0|req: 58/114] 192.168.229.1 () {46 vars in 921 bytes} [Sat Aug 24 11:28:44 2019] GET /index => generated 3020 bytes in 8 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2818|app: 0|req: 59/115] 192.168.229.1 () {46 vars in 921 bytes} [Sat Aug 24 11:28:46 2019] GET /index => generated 3020 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2818|app: 0|req: 60/116] 192.168.229.1 () {46 vars in 921 bytes} [Sat Aug 24 11:28:47 2019] GET /index => generated 3020 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2818|app: 0|req: 61/117] 192.168.229.1 () {46 vars in 921 bytes} [Sat Aug 24 11:28:47 2019] GET /index => generated 3020 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 62/118] 192.168.229.1 () {42 vars in 841 bytes} [Sat Aug 24 11:28:50 2019] GET / => generated 7255 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2817|app: 0|req: 24/119] 192.168.229.1 () {44 vars in 898 bytes} [Sat Aug 24 11:28:52 2019] GET /article/4 => generated 0 bytes in 35 msecs (HTTP/1.1 302) 4 headers in 128 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2814|app: 0|req: 26/120] 192.168.229.1 () {44 vars in 890 bytes} [Sat Aug 24 11:28:52 2019] GET /index => generated 3020 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2816|app: 0|req: 9/121] 192.168.229.1 () {46 vars in 921 bytes} [Sat Aug 24 11:29:10 2019] GET /index => generated 3020 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2816|app: 0|req: 10/122] 192.168.229.1 () {46 vars in 921 bytes} [Sat Aug 24 11:29:11 2019] GET /index => generated 3020 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2818|app: 0|req: 63/123] 192.168.229.1 () {46 vars in 921 bytes} [Sat Aug 24 11:29:11 2019] GET /index => generated 3020 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2817|app: 0|req: 25/124] 192.168.229.1 () {46 vars in 921 bytes} [Sat Aug 24 11:29:11 2019] GET /index => generated 3020 bytes in 7 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 64/125] 192.168.229.1 () {42 vars in 841 bytes} [Sat Aug 24 11:29:15 2019] GET / => generated 7255 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 65/126] 192.168.229.1 () {44 vars in 872 bytes} [Sat Aug 24 11:29:17 2019] GET / => generated 7255 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2816|app: 0|req: 11/127] 192.168.229.1 () {44 vars in 872 bytes} [Sat Aug 24 11:29:17 2019] GET / => generated 7255 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2816|app: 0|req: 12/128] 192.168.229.1 () {44 vars in 872 bytes} [Sat Aug 24 11:29:17 2019] GET / => generated 7255 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 66/129] 192.168.229.1 () {44 vars in 898 bytes} [Sat Aug 24 11:29:19 2019] GET /article/4 => generated 0 bytes in 27 msecs (HTTP/1.1 302) 4 headers in 128 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2817|app: 0|req: 26/130] 192.168.229.1 () {44 vars in 890 bytes} [Sat Aug 24 11:29:19 2019] GET /index => generated 3020 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
