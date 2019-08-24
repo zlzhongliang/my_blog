@@ -8318,3 +8318,8 @@ Not Found: /index
 [pid: 2818|app: 0|req: 66/129] 192.168.229.1 () {44 vars in 898 bytes} [Sat Aug 24 11:29:19 2019] GET /article/4 => generated 0 bytes in 27 msecs (HTTP/1.1 302) 4 headers in 128 bytes (1 switches on core 0)
 Not Found: /index
 [pid: 2817|app: 0|req: 26/130] 192.168.229.1 () {44 vars in 890 bytes} [Sat Aug 24 11:29:19 2019] GET /index => generated 3020 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2817|app: 0|req: 27/131] 192.168.229.1 () {42 vars in 841 bytes} [Sat Aug 24 13:04:48 2019] GET / => generated 7255 bytes in 241 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2814|app: 0|req: 27/132] 192.168.229.1 () {44 vars in 898 bytes} [Sat Aug 24 13:04:55 2019] GET /article/4 => generated 0 bytes in 48 msecs (HTTP/1.1 302) 4 headers in 128 bytes (1 switches on core 0)
+Not Found: /index
+[pid: 2814|app: 0|req: 28/133] 192.168.229.1 () {44 vars in 890 bytes} [Sat Aug 24 13:04:55 2019] GET /index => generated 3020 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2818|app: 0|req: 67/134] 192.168.229.1 () {42 vars in 841 bytes} [Sat Aug 24 14:10:27 2019] GET / => generated 7255 bytes in 104 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
