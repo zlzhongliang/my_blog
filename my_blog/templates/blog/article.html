@@ -6,7 +6,7 @@
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">More <span class="glyphicon glyphicon-list" aria-hidden="true"></span></button>
           </p>
-          <div class="jumbotron" style="line-height:250%">
+          <div class="jumbotron" style="line-height:250%;font-size: 18px">
         {% if article.video == '0' %}
               {% else %}
         <a class="btn btn-info" href=""
@@ -22,7 +22,13 @@
                 <span class="glyphicon glyphicon-time" aria-hidden="true" style="color: darkgray"></span> {{ article.issuedate }}&nbsp;
                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="color: darkgray"></span> {{ article.browse_count }}&nbsp;
             </h6>
-              {{ article.content|safe }}
+              <!--{{ article.content|safe }}-->
+
+
+
+
+
+
 
           </div>
 

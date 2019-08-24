@@ -59,6 +59,8 @@ def article_list(request, nav_id):
 def article(request,article_id):
     try:
         article = ArticleModel.objects.get(is_show=True, is_Delete=True, id=article_id)
+        article.browse_count += 1
+        article.save()
         navs = NavModel.objects.filter(is_Show=True, is_Delete=True)
         right_articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', 'browse_count')[:5]
         data = {'article': article,
