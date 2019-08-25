@@ -64,11 +64,11 @@ def article(request,article_id):
         article_prev = ArticleModel.objects.filter(id__lt=articleid,is_show=True,is_Delete=True,nav2=article_class).order_by('-id').first()
         article_next= ArticleModel.objects.filter(id__gt=articleid,is_show=True,is_Delete=True,nav2=article_class).first()
         if article_next == None:
-            article_next = ArticleModel.objects.filter(id__lt=articleid, is_show=True, is_Delete=True).order_by('-id').first()
+            article_next = ArticleModel.objects.filter(id__gt=articleid, is_show=True, is_Delete=True).first()
             if article_next == None:
                 article_next = article
         if article_prev == None:
-            article_prev = ArticleModel.objects.filter(id__gt=articleid, is_show=True, is_Delete=True).first()
+            article_prev = ArticleModel.objects.filter(id__lt=articleid, is_show=True, is_Delete=True).order_by('-id').first()
             if article_prev == None:
                 article_prev = article
         article.browse_count += 1

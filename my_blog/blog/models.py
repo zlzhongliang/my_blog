@@ -5,7 +5,7 @@ from ckeditor_uploader.fields import  RichTextUploadingField
 
 # Create your models here.
 class NavModel(models.Model):
-    nav_name = models.CharField(max_length=6,verbose_name='类别')
+    nav_name = models.CharField(max_length=20,verbose_name='类别')
     issuedate = models.DateTimeField(auto_now_add=True,verbose_name='发布时间')
     is_Show = models.BooleanField(default=True,verbose_name='是否显示')
     is_Delete = models.BooleanField(default=True,verbose_name='是否删除')
