@@ -3,12 +3,11 @@ from django.shortcuts import render, redirect
 # Create your views here.
 from blog.models import ArticleModel, NavModel
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
-
+global navs
+navs = NavModel.objects.filter(is_Delete=True)
 
 def index(request):
     articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', '-id')
-    navs = NavModel.objects.filter(is_Show=True, is_Delete=True)
-    right_articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', 'browse_count')[:5]
 
     paginator = Paginator(articles, 6)
     # 从前端获取当前的页码数,默认为1
@@ -22,7 +21,6 @@ def index(request):
     except EmptyPage as e:
         page_of_blogs = paginator.page(paginator.num_pages)  # 如果用户输入的页数不在系统的页码列表中时,显示最后一页的内容
     data = {'articles': page_of_blogs,
-            'right_articles': right_articles,
             'navs': navs,
             'title': "钟亮的个人博客",
             }
@@ -33,8 +31,6 @@ def article_list(request, nav_id):
 
     nav2 = NavModel.objects.get(is_Show=True, is_Delete=True, id = nav_id)
     articles = ArticleModel.objects.filter(is_show=True, is_Delete=True, nav2=nav2).order_by('sort', '-id')
-    navs = NavModel.objects.filter(is_Show=True, is_Delete=True)
-    right_articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', 'browse_count')[:5]
 
     paginator = Paginator(articles, 6)
     # 从前端获取当前的页码数,默认为1
@@ -49,7 +45,6 @@ def article_list(request, nav_id):
         page_of_blogs = paginator.page(paginator.num_pages)  # 如果用户输入的页数不在系统的页码列表中时,显示最后一页的内容
 
     data = {'articles': page_of_blogs,
-            'right_articles': right_articles,
             'navs': navs,
             'title': "钟亮的个人博客",
             }
@@ -73,10 +68,7 @@ def article(request,article_id):
                 article_prev = article
         article.browse_count += 1
         article.save()
-        navs = NavModel.objects.filter(is_Show=True, is_Delete=True)
-        right_articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', 'browse_count')[:5]
         data = {'article': article,
-                'right_articles': right_articles,
                 'navs': navs,
                 'title': article.title,
                 'article_next': article_next,
@@ -88,10 +80,7 @@ def article(request,article_id):
 
 
 def about(request):
-    navs = NavModel.objects.filter(is_Show=True, is_Delete=True)
-    right_articles = ArticleModel.objects.filter(is_show=True, is_Delete=True).order_by('sort', 'browse_count')[:5]
-    data = {'right_articles': right_articles,
-            'navs': navs,
+    data = {'navs': navs,
             'title': "关于博主",
             }
     return render(request,"blog/about.html", data)

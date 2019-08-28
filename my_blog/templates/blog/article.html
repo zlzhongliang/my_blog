@@ -2,11 +2,43 @@
 {% extends 'blog/base.html' %}
 {% load static %}
 {% block body %}
+<style>
+            .panel-default{
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            .active_content span{
+                padding-left: 2em;
+            }
+            .panel-footer{
+                line-height: 125%;
+                padding: 0;
+                margin: 0;
+            }
+            .panel-footer span,kbd{
+                padding: 0;
+            }
+            h3{
+                color: deepskyblue;
+            }
+            pre{
+                display: block;
+                margin: 0;
+                border: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                white-space: pre;
+            }
+            .img_width{
+                display: inline-block;
+            }
 
+        </style>
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">More <span class="glyphicon glyphicon-list" aria-hidden="true"></span></button>
           </p>
-          <div class="jumbotron" style="line-height:250%;font-size: 18px">
+          <div class="jumbotron" style="line-height:180%;font-size: 16px">
         {% if article.video == '0' %}
               {% else %}
         <a class="btn btn-info" href=""
@@ -26,8 +58,6 @@
               {{ article.content|safe }}
 
 <!--文章的开始-->
-
-
 
 
 

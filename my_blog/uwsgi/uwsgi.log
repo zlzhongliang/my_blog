@@ -8323,3 +8323,6 @@ Not Found: /index
 Not Found: /index
 [pid: 2814|app: 0|req: 28/133] 192.168.229.1 () {44 vars in 890 bytes} [Sat Aug 24 13:04:55 2019] GET /index => generated 3020 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
 [pid: 2818|app: 0|req: 67/134] 192.168.229.1 () {42 vars in 841 bytes} [Sat Aug 24 14:10:27 2019] GET / => generated 7255 bytes in 104 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2817|app: 0|req: 28/135] 192.168.229.1 () {42 vars in 841 bytes} [Sun Aug 25 12:02:02 2019] GET / => generated 7255 bytes in 306 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2818|app: 0|req: 68/136] 192.168.229.1 () {42 vars in 788 bytes} [Sun Aug 25 12:02:03 2019] GET /favicon.ico => generated 3038 bytes in 110 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)

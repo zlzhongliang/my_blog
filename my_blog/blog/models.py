@@ -4,21 +4,6 @@ from django.db import models
 from ckeditor_uploader.fields import  RichTextUploadingField
 
 # Create your models here.
-class NavModel(models.Model):
-    nav_name = models.CharField(max_length=20,verbose_name='类别')
-    issuedate = models.DateTimeField(auto_now_add=True,verbose_name='发布时间')
-    is_Show = models.BooleanField(default=True,verbose_name='是否显示')
-    is_Delete = models.BooleanField(default=True,verbose_name='是否删除')
-    Nav_root = models.ForeignKey('self',related_name='root_nav',null=True,on_delete=models.DO_NOTHING,blank=True,verbose_name='根')
-
-    def __str__(self):
-        return self.nav_name
-
-
-    @classmethod
-    def create_nav(cls, nav_name, nav_root):
-        nav = cls(Nav_name=nav_name, Nav_root=nav_root)
-        return nav
 
 
 
@@ -36,7 +21,6 @@ def user_avatar_path(instance, filename):
     return file
 
 
-
 class PictureModel(models.Model):
     name = models.CharField(max_length=20,verbose_name='图片名称')
     picture = models.ImageField(upload_to=user_avatar_path, verbose_name='图片')
@@ -52,6 +36,24 @@ class PictureModel(models.Model):
     def create_picture(cls, name,picture):
         picture = cls(name=name,picture=picture)
         return picture
+
+
+class NavModel(models.Model):
+    nav_name = models.CharField(max_length=20,verbose_name='类别')
+    nav_picture = models.ForeignKey(PictureModel,default=1,on_delete=models.CASCADE,verbose_name='图片')
+    issuedate = models.DateTimeField(auto_now_add=True,verbose_name='发布时间')
+    is_Show = models.BooleanField(default=True,verbose_name='是否显示')
+    is_Delete = models.BooleanField(default=True,verbose_name='是否删除')
+    Nav_root = models.ForeignKey('self',related_name='root_nav',null=True,on_delete=models.DO_NOTHING,blank=True,verbose_name='根')
+
+    def __str__(self):
+        return self.nav_name
+
+
+    @classmethod
+    def create_nav(cls, nav_name, nav_root):
+        nav = cls(Nav_name=nav_name, Nav_root=nav_root)
+        return nav
 
 
 class ArticleModel(models.Model):

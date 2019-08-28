@@ -75,13 +75,17 @@
         </div><!--/.col-xs-12.col-sm-9-->
 
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-          {% for right_article in right_articles %}
-          <div class="list-group">
-                <a href="{% url 'blog:article' right_article.id %}" class="thumbnail" style="width: 100%">
-                  <img src="{{ MEDIA_URL }}{{ right_article.article_picture.picture }}" alt="..." style="width: 100%">
-                </a>
-          </div>
-          {% endfor %}
+
+              {% for right_list in navs %}
+                {% if right_list.is_Show == True %}
+                      <div class="list-group">
+                        <a href="{% url 'blog:article_list' right_list.id %}" class="thumbnail" style="width: 100%">
+                          <img src="{{ MEDIA_URL }}{{ right_list.nav_picture.picture }}" alt="..." style="width: 100%">
+                        </a>
+                      </div>
+                {% endif %}
+            {% endfor %}
+
 
         </div><!--/.sidebar-offcanvas-->
       </div><!--/row-->
