@@ -43,11 +43,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">钟亮的个人博客</a>
+          <a class="navbar-brand" href="/">丘壑笔记</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="{% url 'blog:about' %}">关于博主</a></li>
+            <li class="active"><a href="{% url 'blog:about' %}">博主</a></li>
             {% for nav in navs %}
               {% if nav.Nav_root == null %}
                     <li class="dropdown ">
